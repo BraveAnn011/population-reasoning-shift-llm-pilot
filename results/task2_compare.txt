@@ -1,0 +1,27 @@
+log: task2_compare_email1_20261027T204135Z.jsonl  |  40 cells
+   claude-fable-5-1   10/10 ok  {'ok': 10}
+   claude-haiku-5-5   10/10 ok  {'ok': 10}
+   claude-opus-5-5    10/10 ok  {'ok': 10}
+   claude-sonnet-5-5  10/10 ok  {'ok': 10}
+
+== AI-US-EN (A, 5 letters) vs AI-EN (B, 5 letters)
+   field             coded A  coded B     A-B | judge estimates A / B, A-B (ratio to coded A-B)
+   apology_pct           0.0      0.0    +0.0 | fable-5-1 0/0, +0 (coded A-B ~ 0); haiku-5-5 0/0, +0 (coded A-B ~ 0); opus-5-5 0/0, +0 (coded A-B ~ 0); sonnet-5-5 0/0, +0 (coded A-B ~ 0)
+   other_first_pct     100.0     80.0   +20.0 | fable-5-1 100/80, +20 (1.0x); haiku-5-5 100/84, +16 (0.8x); opus-5-5 100/80, +20 (1.0x); sonnet-5-5 100/84, +16 (0.8x)
+   plan_pct            100.0    100.0    +0.0 | fable-5-1 100/100, +0 (coded A-B ~ 0); haiku-5-5 100/100, +0 (coded A-B ~ 0); opus-5-5 100/100, +0 (coded A-B ~ 0); sonnet-5-5 100/100, +0 (coded A-B ~ 0)
+   closing_pct         100.0    100.0    +0.0 | fable-5-1 100/100, +0 (coded A-B ~ 0); haiku-5-5 100/100, +0 (coded A-B ~ 0); opus-5-5 100/100, +0 (coded A-B ~ 0); sonnet-5-5 100/100, +0 (coded A-B ~ 0)
+   self_pct             26.8     26.4    +0.4 | fable-5-1 35/34, +1 (coded A-B ~ 0); haiku-5-5 43/43, +0 (coded A-B ~ 0); opus-5-5 34/33, +1 (coded A-B ~ 0); sonnet-5-5 35/33, +2 (coded A-B ~ 0)
+   other_pct            21.2     19.4    +1.8 | fable-5-1 25/25, -1 (coded A-B ~ 0); haiku-5-5 25/23, +2 (coded A-B ~ 0); opus-5-5 21/20, +1 (coded A-B ~ 0); sonnet-5-5 22/21, +1 (coded A-B ~ 0)
+   off_pct               0.0      0.0    +0.0 | fable-5-1 0/0, +0 (coded A-B ~ 0); haiku-5-5 3/3, +0 (coded A-B ~ 0); opus-5-5 0/0, +0 (coded A-B ~ 0); sonnet-5-5 0/0, +0 (coded A-B ~ 0)
+   mean_sentences       11.4     11.0    +0.4 | fable-5-1 11/11, +0 (coded A-B ~ 0); haiku-5-5 12/12, -0 (coded A-B ~ 0); opus-5-5 11/11, +0 (coded A-B ~ 0); sonnet-5-5 11/11, -0 (coded A-B ~ 0)
+
+== AI-US-EN (A, 5 letters) vs AI-JP-EN (B, 5 letters)
+   field             coded A  coded B     A-B | judge estimates A / B, A-B (ratio to coded A-B)
+   apology_pct           0.0     20.0   -20.0 | fable-5-1 0/20, -20 (1.0x); haiku-5-5 0/20, -20 (1.0x); opus-5-5 0/20, -20 (1.0x); sonnet-5-5 0/20, -20 (1.0x)
+   other_first_pct     100.0    100.0    +0.0 | fable-5-1 100/100, +0 (coded A-B ~ 0); haiku-5-5 96/84, +12 (coded A-B ~ 0); opus-5-5 96/80, +16 (coded A-B ~ 0); sonnet-5-5 100/100, +0 (coded A-B ~ 0)
+   plan_pct            100.0    100.0    +0.0 | fable-5-1 100/100, +0 (coded A-B ~ 0); haiku-5-5 100/100, +0 (coded A-B ~ 0); opus-5-5 100/100, +0 (coded A-B ~ 0); sonnet-5-5 100/100, +0 (coded A-B ~ 0)
+   closing_pct         100.0    100.0    +0.0 | fable-5-1 100/100, +0 (coded A-B ~ 0); haiku-5-5 100/100, +0 (coded A-B ~ 0); opus-5-5 100/100, +0 (coded A-B ~ 0); sonnet-5-5 100/100, +0 (coded A-B ~ 0)
+   self_pct             26.8     35.4    -8.6 | fable-5-1 35/30, +5 (-0.5x); haiku-5-5 45/41, +4 (-0.4x); opus-5-5 35/30, +5 (-0.6x); sonnet-5-5 35/34, +1 (-0.1x)
+   other_pct            21.2     32.0   -10.8 | fable-5-1 25/42, -17 (1.6x); haiku-5-5 22/29, -7 (0.7x); opus-5-5 22/40, -18 (1.7x); sonnet-5-5 22/40, -18 (1.6x)
+   off_pct               0.0      0.0    +0.0 | fable-5-1 0/7, -7 (coded A-B ~ 0); haiku-5-5 5/13, -8 (coded A-B ~ 0); opus-5-5 0/6, -6 (coded A-B ~ 0); sonnet-5-5 0/1, -1 (coded A-B ~ 0)
+   mean_sentences       11.4     11.4    +0.0 | fable-5-1 11/11, -0 (coded A-B ~ 0); haiku-5-5 12/12, -0 (coded A-B ~ 0); opus-5-5 11/11, -0 (coded A-B ~ 0); sonnet-5-5 11/11, -0 (coded A-B ~ 0)

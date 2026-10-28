@@ -1,0 +1,35 @@
+gold: coding_sheet_gcoding_done_v4.csv (311 units)  |  log: task1_email1_20261028T000552Z.jsonl
+
+== AI letters (n=292 units)
+   move: single run vs gold (mean kappa, mean agreement)  |  5-run modal vs gold
+     fable-5-1   0.86    88%   |   0.86
+     haiku-5-5   0.85    88%   |   0.85
+     opus-5-5    0.86    88%   |   0.86
+     sonnet-5-5  0.86    88%   |   0.86
+   focus: single run vs gold (mean kappa, mean agreement)  |  5-run modal vs gold
+     fable-5-1   0.72    79%   |   0.71
+     haiku-5-5   0.68    77%   |   0.69
+     opus-5-5    0.71    79%   |   0.71
+     sonnet-5-5  0.73    80%   |   0.74
+   move: most frequent modal-vs-gold confusions (judge code -> gold code)
+     fable-5-1  33 wrong, 32 on a §5.1 pair: NEWS->RSN 9, PLAN->CLS 8, SHR->INQ 5, SHR->TRG 5
+     haiku-5-5  36 wrong, 35 on a §5.1 pair: NEWS->RSN 9, PLAN->CLS 8, SHR->INQ 5, SHR->TRG 5
+     opus-5-5   34 wrong, 32 on a §5.1 pair: NEWS->RSN 9, PLAN->CLS 8, SHR->INQ 5, SHR->TRG 5
+     sonnet-5-5 35 wrong, 33 on a §5.1 pair: NEWS->RSN 10, PLAN->CLS 8, SHR->INQ 5, SHR->TRG 5
+
+== human letters (n=19 units)
+   move: single run vs gold (mean kappa, mean agreement)  |  5-run modal vs gold
+     fable-5-1   0.49    56%   |   0.51
+     haiku-5-5   0.42    49%   |   0.46
+     opus-5-5    0.49    57%   |   0.51
+     sonnet-5-5  0.52    59%   |   0.56
+   focus: single run vs gold (mean kappa, mean agreement)  |  5-run modal vs gold
+     fable-5-1   0.72    81%   |   0.68
+     haiku-5-5   0.54    69%   |   0.52
+     opus-5-5    0.75    83%   |   0.77
+     sonnet-5-5  0.64    76%   |   0.62
+   move: most frequent modal-vs-gold confusions (judge code -> gold code)
+     fable-5-1  8 wrong, 8 on a §5.1 pair: SHR->TRG 2, SHR->NEWS 2, SHR->INQ 1, SHR->CLS 1
+     haiku-5-5  9 wrong, 9 on a §5.1 pair: SHR->TRG 2, SHR->INQ 2, SHR->NEWS 2, SHR->CLS 1
+     opus-5-5   8 wrong, 8 on a §5.1 pair: SHR->TRG 2, SHR->NEWS 2, SHR->INQ 1, SHR->CLS 1
+     sonnet-5-5 7 wrong, 7 on a §5.1 pair: SHR->TRG 2, SHR->INQ 1, SHR->CLS 1, SHR->NEWS 1

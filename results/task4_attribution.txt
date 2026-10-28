@@ -1,0 +1,54 @@
+log: task4_attribute_email1_20261027T210058Z.jsonl  |  440 cells: 4 judges x 22 letters x 5 runs
+
+1. Valid replies (status ok)
+   claude-fable-5-1   110/110  {'ok': 110}
+   claude-haiku-5-5   110/110  {'ok': 110}
+   claude-opus-5-5    110/110  {'ok': 110}
+   claude-sonnet-5-5  110/110  {'ok': 110}
+
+2. Answers by writer group (all runs; % of valid replies; mean confidence 1-5)
+   AI-EN (5 letters)
+     fable-5-1  author: ai 100% (c3.4) | native_language: english 100% (c3.2) | grew_up: united_states 100% (c2.8)
+     haiku-5-5  author: human 96% ai 4% (c3.2) | native_language: english 100% (c3.9) | grew_up: united_states 96% none 4% (c2.1)
+     opus-5-5   author: ai 100% (c3.8) | native_language: none 100% (c2.9) | grew_up: none 100% (c2.8)
+     sonnet-5-5 author: ai 60% human 40% (c2.8) | native_language: english 100% (c3.8) | grew_up: united_states 100% (c2.8)
+   AI-JA (5 letters)
+     fable-5-1  author: ai 100% (c2.9) | native_language: japanese 100% (c4.0) | grew_up: japan 100% (c3.9)
+     haiku-5-5  author: human 100% (c3.3) | native_language: japanese 100% (c4.7) | grew_up: japan 100% (c3.9)
+     opus-5-5   author: ai 100% (c3.0) | native_language: japanese 96% none 4% (c3.8) | grew_up: japan 96% none 4% (c3.8)
+     sonnet-5-5 author: human 72% ai 28% (c2.3) | native_language: japanese 100% (c4.6) | grew_up: japan 100% (c4.0)
+   AI-JP-EN (5 letters)
+     fable-5-1  author: ai 92% human 8% (c2.7) | native_language: japanese 100% (c3.4) | grew_up: japan 100% (c3.4)
+     haiku-5-5  author: human 100% (c3.3) | native_language: japanese 60% english 40% (c2.6) | grew_up: japan 72% united_states 12% other 8% none 8% (c2.2)
+     opus-5-5   author: human 76% ai 24% (c2.4) | native_language: japanese 100% (c3.5) | grew_up: japan 100% (c3.5)
+     sonnet-5-5 author: human 100% (c2.2) | native_language: japanese 100% (c3.2) | grew_up: japan 100% (c3.2)
+   AI-US-EN (5 letters)
+     fable-5-1  author: ai 100% (c3.1) | native_language: english 100% (c3.8) | grew_up: united_states 100% (c3.6)
+     haiku-5-5  author: human 96% ai 4% (c3.4) | native_language: english 100% (c4.0) | grew_up: united_states 100% (c2.5)
+     opus-5-5   author: ai 100% (c3.9) | native_language: none 56% english 44% (c2.9) | grew_up: none 56% united_states 44% (c2.8)
+     sonnet-5-5 author: ai 60% human 40% (c2.6) | native_language: english 100% (c4.0) | grew_up: united_states 100% (c3.0)
+   JP-L2 (1 letters)
+     fable-5-1  author: human 100% (c4.0) | native_language: japanese 100% (c5.0) | grew_up: japan 100% (c5.0)
+     haiku-5-5  author: human 100% (c4.0) | native_language: japanese 100% (c4.0) | grew_up: japan 100% (c3.8)
+     opus-5-5   author: human 100% (c5.0) | native_language: japanese 100% (c5.0) | grew_up: japan 100% (c4.8)
+     sonnet-5-5 author: human 100% (c5.0) | native_language: japanese 100% (c5.0) | grew_up: japan 100% (c5.0)
+   US-L1 (1 letters)
+     fable-5-1  author: human 100% (c3.0) | native_language: japanese 100% (c3.0) | grew_up: japan 100% (c2.6)
+     haiku-5-5  author: ai 60% human 40% (c2.4) | native_language: english 80% none 20% (c2.4) | grew_up: united_states 60% other 20% none 20% (c1.2)
+     opus-5-5   author: human 100% (c3.0) | native_language: japanese 100% (c2.0) | grew_up: japan 100% (c2.0)
+     sonnet-5-5 author: human 100% (c2.0) | native_language: english 100% (c2.2) | grew_up: united_states 100% (c2.0)
+
+3. Test-retest (Fleiss' kappa over 5 runs; letters with all runs valid)
+   author          fable-5-1  0.86   haiku-5-5  0.27   opus-5-5  0.88   sonnet-5-5  0.94
+   native_language fable-5-1  1.00   haiku-5-5  0.83   opus-5-5  0.79   sonnet-5-5  1.00
+   grew_up         fable-5-1  1.00   haiku-5-5  0.78   opus-5-5  0.79   sonnet-5-5  1.00
+
+4. Cues
+   fable-5-1  7.0 cues per reply, 98% quoted verbatim
+   haiku-5-5  5.6 cues per reply, 97% quoted verbatim
+   opus-5-5   7.0 cues per reply, 100% quoted verbatim
+   sonnet-5-5 6.2 cues per reply, 99% quoted verbatim
+   most quoted in AI-EN: "it's been way too long!" x42; "i feel like i've missed about three seasons of your life." x36; "that terrible taco place we used to go to" x32; "some of it has even been edible." x20; "miss you, and talk soon!" x19; "that terrible taco place we used to go to after class" x19; "which has helped me feel a bit more human" x19; "some loaves are great and some could be used as doorstops." x18
+   most quoted in AI-JA: "久しぶり!元気にしてる?しばらく連絡できなくてごめんね。" x38; "〇〇より" x24; "返信はいつでも大丈夫だから、のんびり待ってます。" x18; "返事はいつでもいいから、また近況を聞かせてください。" x17; "久しぶり!しばらく連絡できなくてごめんね。元気にしてる?" x16; "運動不足だった体が、ようやく目を覚ましてきた感じ。" x15; "早起きは苦手だったのに、意外と続いてて自分でもびっくり。" x14; "母の手料理がやっぱり一番だなって、しみじみ思った。" x14
+   most quoted in AI-JP-EN: "went to a hot spring with my family" x36; "please take care of yourself, and don't work too hard!" x20; "work has been really busy since spring" x19; "i hope you're not working too hard." x19; "i'm sorry i didn't contact you earlier." x19; "take care and don't work too hard!" x19; "it's getting very hot here, and i already miss the spring weather." x18; "please take care of yourself!" x18
+   most quoted in AI-US-EN: "it's been way too long!" x68; "that terrible taco place we used to go to after work" x35; "that taco place we used to go to" x23; "i'm dying to know how that turned out" x22; "let's just say the smoke alarm and i are well acquainted now." x20; "it only took me three months of talking about it" x19; "let's just say the smoke alarm and i are on a first-name basis now." x17; "she's decided that 5 a.m. is the perfect time to wake me up every day" x17

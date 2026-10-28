@@ -1,0 +1,55 @@
+log: task1_email1_20261028T000552Z.jsonl  |  440 cells: 4 judges x 22 letters x 5 runs
+
+1. Valid replies (status ok)
+   claude-fable-5-1   110/110  {'ok': 110}
+   claude-haiku-5-5   110/110  {'ok': 110}
+   claude-opus-5-5    110/110  {'ok': 110}
+   claude-sonnet-5-5  110/110  {'ok': 110}
+
+2. Test-retest (Fleiss' kappa over 5 runs; units with all runs valid)
+   move   fable-5-1  0.99   haiku-5-5  0.99   opus-5-5  0.99   sonnet-5-5  0.99
+   focus  fable-5-1  0.99   haiku-5-5  0.95   opus-5-5  0.98   sonnet-5-5  0.96
+
+3. Between-judge agreement (Cohen's kappa on modal codes)
+   move
+     fable-5-1  vs haiku-5-5   0.98  (n=311 units)
+     fable-5-1  vs opus-5-5    1.00  (n=311 units)
+     fable-5-1  vs sonnet-5-5  0.99  (n=311 units)
+     haiku-5-5  vs opus-5-5    0.98  (n=311 units)
+     haiku-5-5  vs sonnet-5-5  0.98  (n=311 units)
+     opus-5-5   vs sonnet-5-5  0.99  (n=311 units)
+   focus
+     fable-5-1  vs haiku-5-5   0.94  (n=311 units)
+     fable-5-1  vs opus-5-5    0.98  (n=311 units)
+     fable-5-1  vs sonnet-5-5  0.96  (n=311 units)
+     haiku-5-5  vs opus-5-5    0.94  (n=311 units)
+     haiku-5-5  vs sonnet-5-5  0.92  (n=311 units)
+     opus-5-5   vs sonnet-5-5  0.95  (n=311 units)
+
+4. Self-recognition check: claude-sonnet-5-5 vs each other judge
+   own letters = 20 AI letters written by claude-sonnet-5-5; other = 2 human letters
+   (with 2 human letters the 'other' column is a pipeline check, not a comparison)
+   move
+     vs fable-5-1  own  0.99 (n=292)   other  0.93 (n=19)
+     vs haiku-5-5  own  0.98 (n=292)   other  0.86 (n=19)
+     vs opus-5-5   own  1.00 (n=292)   other  0.93 (n=19)
+   focus
+     vs fable-5-1  own  0.97 (n=292)   other  0.78 (n=19)
+     vs haiku-5-5  own  0.93 (n=292)   other  0.85 (n=19)
+     vs opus-5-5   own  0.96 (n=292)   other  0.85 (n=19)
+
+5. Code distribution by group (all judges, modal codes)
+   move
+     AI-EN     (n= 288) NEWS 26%, CLS 18%, SHR 14%, INQ 14%, PLAN 14%, OPN 7%, TRG 7%
+     AI-JA     (n= 288) NEWS 29%, PLAN 22%, INQ 21%, OPN 7%, SHR 7%, APO 7%, CLS 7%
+     AI-JP-EN  (n= 308) NEWS 30%, INQ 25%, CLS 15%, SHR 9%, PLAN 8%, OPN 6%, TRG 4%, APO 1%, RSN 1%
+     AI-US-EN  (n= 284) NEWS 27%, SHR 15%, INQ 15%, PLAN 14%, CLS 14%, OPN 7%, TRG 7%
+     JP-L2     (n=  36) OPN 22%, SHR 22%, NEWS 22%, INQ 22%, PLAN 11%
+     US-L1     (n=  40) SHR 40%, INQ 28%, NEWS 12%, OPN 10%, PLAN 10%
+   focus
+     AI-EN     (n= 288) JOINT 32%, SELF 27%, NEUTRAL 21%, OTHER 21%
+     AI-JA     (n= 288) SELF 40%, OTHER 30%, JOINT 17%, NEUTRAL 12%
+     AI-JP-EN  (n= 308) SELF 35%, OTHER 33%, NEUTRAL 17%, JOINT 15%
+     AI-US-EN  (n= 284) JOINT 31%, SELF 27%, OTHER 21%, NEUTRAL 21%
+     JP-L2     (n=  36) OTHER 39%, SELF 28%, NEUTRAL 17%, JOINT 17%
+     US-L1     (n=  40) OTHER 42%, JOINT 35%, SELF 12%, NEUTRAL 10%
